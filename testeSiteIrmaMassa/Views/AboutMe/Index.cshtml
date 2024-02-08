@@ -1,0 +1,123 @@
+﻿@model IEnumerable<AboutMeModel>
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel Example</title>
+    <style>
+        /* Estilos opcionais para o carrossel */
+        #carousel-container {
+            width: 60%; /* Defina a largura do carrossel conforme necessário */
+            margin: 0 auto; /* Centralize o carrossel horizontalmente */
+            overflow: hidden; /* Oculte qualquer conteúdo que ultrapasse os limites do contêiner */
+            position: relative; /* Permita que os botões de navegação se posicionem corretamente */
+        }
+
+        #carousel-images {
+            display: flex; /* Use o flexbox para alinhar as imagens horizontalmente */
+            transition: transform 0.5s ease; /* Adicione uma transição suave para a mudança de imagem */
+        }
+
+        .carousel-image {
+            width: 100%; /* Defina a largura das imagens */
+            flex: 0 0 auto; /* Permita que as imagens tenham tamanho fixo e não cresçam */
+        }
+
+        /* Estilos para os botões de navegação */
+        .carousel-btn {
+            cursor: pointer; /* Transforme o cursor em uma mão quando passar sobre os botões */
+            position: absolute; /* Posicione os botões em relação ao contêiner do carrossel */
+            top: 50%; /* Alinhe os botões verticalmente ao centro */
+            transform: translateY(-50%); /* Corrija o posicionamento vertical */
+            background-color: rgba(255, 255, 255, 0.5); /* Adicione um fundo semi-transparente */
+            border: none; /* Remova as bordas dos botões */
+            padding: 10px; /* Adicione espaço interno aos botões */
+        }
+
+            .carousel-btn:hover {
+                background-color: rgba(255, 255, 255, 0.8); /* Destaque os botões ao passar o mouse sobre eles */
+            }
+
+            .carousel-btn.prev {
+                left: 0; /* Alinhe o botão "Anterior" à esquerda */
+            }
+
+            .carousel-btn.next {
+                right: 0; /* Alinhe o botão "Próximo" à direita */
+            }
+    </style>
+</head>
+<body>
+    <div id="carousel-container">
+        <div id="carousel-images">
+            <img class="carousel-image" src="~/Imagens/SobreMim/sobremim1.png" alt="Imagem 1">
+            <img class="carousel-image" src="~/Imagens/SobreMim/sobremim2.png" alt="Imagem 2">
+            <img class="carousel-image" src="~/Imagens/SobreMim/sobremim3.png" alt="Imagem 3">
+            <!-- Adicione mais imagens conforme necessário -->
+        </div>
+        <button class="carousel-btn prev" onclick="prevSlide()">Anterior</button>
+        <button class="carousel-btn next" onclick="nextSlide()">Próximo</button>
+    </div>
+
+    <!-- Inclua a biblioteca jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        // Funções para navegação no carrossel
+        function nextSlide() {
+            $('#carousel-images').animate({ left: '-=100%' }, 500, function () {
+                $(this).append($(this).children().first());
+                $(this).css('left', '0');
+            });
+        }
+
+        function prevSlide() {
+            $('#carousel-images').animate({ left: '+=100%' }, 500, function () {
+                $(this).prepend($(this).children().last());
+                $(this).css('left', '0');
+            });
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sua Página Inicial</title>
+    <link rel="stylesheet" href="~/css/Minty.css" /> <!-- Este é o caminho para o seu arquivo CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+    <style>
+        h1, h2 {
+            font-family: 'Arial', sans-serif; /* Altere 'Arial' para a fonte desejada */
+            font-weight: bold; /* Define o peso da fonte como negrito */
+            color: black; /* Cor do texto */
+            padding: 10px 20px; /* Espaçamento interno */
+            border-radius: 100px; /* Bordas arredondadas */
+        }
+
+        body {
+            background-image: url('../imagens/Home/roupeiroimagemfundo.JPG'); /* Substitua '../imagens/Home/roupeiroimagemfundo.JPG' pelo caminho correto da sua imagem */
+            background-size: cover; /* Para cobrir todo o espaço do body */
+            background-position: center; /* Para centralizar a imagem */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="text-center d-flex flex-row justify-content-center align-items-center">
+        <div class="background-rectangle mr-4">
+            <h1 class="display-2 dancing-script">Paula Gonzales</h1>
+            <h2 class="display-4 dancing-script">Consultora de Estilo</h2>
+        </div>
+
+        <div class="img-circle">
+            <img src="~/Imagens/SobreMim/FotoPaulaSobreMim.jpg" alt="Imagem" class="img-responsive" style="width: 100%;">
+        </div>
+    </div>
+
+</body>

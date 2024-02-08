@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\vschu\\.nuget\\packages\\": {}
+    "C:\\Users\\borda\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\borda\\OneDrive\\Área de Trabalho\\Samanta\\CURSO PROGRAMAÇÃO\\Projetos individuais\\testeSiteIrmaMassa\\testeSiteIrmaMassa\\testeSiteIrmaMassa.csproj",
+      "projectUniqueName": "C:\\Users\\borda\\OneDrive\\Área de Trabalho\\Samanta\\CURSO PROGRAMAÇÃO\\Projetos individuais\\.NetProject_PaulaConsultora\\testeSiteIrmaMassa\\testeSiteIrmaMassa.csproj",
       "projectName": "testeSiteIrmaMassa",
-      "projectPath": "C:\\Users\\borda\\OneDrive\\Área de Trabalho\\Samanta\\CURSO PROGRAMAÇÃO\\Projetos individuais\\testeSiteIrmaMassa\\testeSiteIrmaMassa\\testeSiteIrmaMassa.csproj",
-      "packagesPath": "C:\\Users\\vschu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\borda\\OneDrive\\Área de Trabalho\\Samanta\\CURSO PROGRAMAÇÃO\\Projetos individuais\\testeSiteIrmaMassa\\testeSiteIrmaMassa\\obj\\",
+      "projectPath": "C:\\Users\\borda\\OneDrive\\Área de Trabalho\\Samanta\\CURSO PROGRAMAÇÃO\\Projetos individuais\\.NetProject_PaulaConsultora\\testeSiteIrmaMassa\\testeSiteIrmaMassa.csproj",
+      "packagesPath": "C:\\Users\\borda\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\borda\\OneDrive\\Área de Trabalho\\Samanta\\CURSO PROGRAMAÇÃO\\Projetos individuais\\.NetProject_PaulaConsultora\\testeSiteIrmaMassa\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\vschu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\borda\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
