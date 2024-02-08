@@ -1,0 +1,32 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+
+body {
+    background-image: url('../imagens/Home/roupeiroimagemfundo.JPG'); /* Substitua '../imagem/fundo.jpg' pelo caminho correto da sua imagem */
+    background-size: cover; /* Para cobrir todo o espaço do body */
+    background-position: center; /* Para centralizar a imagem */
+    /* Outras propriedades CSS opcionais, como cor do texto, fonte, etc. */
+}
+
+.dancing-script {
+    font-family: 'Dancing Script', cursive;
+}
+
+
